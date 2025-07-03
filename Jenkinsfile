@@ -1,11 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        git 'GitInstalled'   // Match the name set in Global Tool Config
-    }
-
-    stages {
+      stages {
         stage('Install and Test'){
             steps {
                 bat 'npm ci'
