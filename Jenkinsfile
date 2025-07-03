@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/jeevanreddymaru123/PlayWright-BDD-Cucumber-POM.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh 'npm ci'
