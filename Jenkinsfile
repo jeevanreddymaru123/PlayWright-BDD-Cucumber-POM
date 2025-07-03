@@ -1,14 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS_18'  // Configure in Jenkins global tools
-    }
-
-    environment {
-        PLAYWRIGHT_BROWSERS_PATH = './ms-playwright'  // Optional if caching
-    }
-
     stages {
         stage('Checkout') {
             steps {
