@@ -12,15 +12,6 @@ pipeline {
         }
     
         }
-
-        stage('Publish Report') {
-            steps {
-                publishHTML(target: [
-                    reportDir: 'reports',
-                    reportFiles: 'cucumber-report.html',
-                    reportName: 'Cucumber Test Report'
-                ])
-            }
-        }
+     
     }
 
