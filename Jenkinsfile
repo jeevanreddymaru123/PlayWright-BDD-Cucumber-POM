@@ -1,7 +1,16 @@
 pipeline {
     agent any
 
+    tools {
+        git 'DefaultGit'   // Match the name set in Global Tool Config
+    }
+
     stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/jeevanreddymaru123/PlayWright-BDD-Cucumber-POM.git'
+            }
+        }
 
         stage('Install Dependencies') {
             steps {
