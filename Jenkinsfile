@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Install & Test){
+        stage('Install and Test'){
             steps {
                 bat 'npm ci'
                 bat 'npx playwright install'
@@ -27,4 +27,4 @@ pipeline {
             }
         }
     }
-}
+
