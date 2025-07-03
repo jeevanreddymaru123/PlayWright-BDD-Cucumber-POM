@@ -10,8 +10,21 @@ pipeline {
                 bat 'npm run report'
             }
         }
-    
+
+        stage('Publish Cucumber Report') {
+            steps {
+                publishHTML([
+                    reportDir: 'reports',
+                    reportFiles: 'cucumber-report.html',
+                    reportName: 'Cucumber Test Report',
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: false
+                ])
+            }
         }
-     
+    
     }
+     
+ }
 
