@@ -16,7 +16,7 @@ pipeline {
                 publishHTML([
                     reportDir: 'reports',
                     reportFiles: 'cucumber-report.html',
-                    reportName: 'Cucumber Test Report',
+                    reportName: 'BDD Report - multiple-cucumber.html',
                     keepAll: true,
                     alwaysLinkToLastBuild: true,
                     allowMissing: false
