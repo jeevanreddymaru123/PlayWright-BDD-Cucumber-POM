@@ -8,20 +8,20 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'npm ci'
+                bat 'npm ci'
             }
         }
 
         stage('Run Playwright Tests') {
             steps {
-                sh 'npx playwright install'
-                sh 'npm run test'
+                bat 'npx playwright install'
+                bat 'npm run test'
             }
         }
 
         stage('Generate Report') {
             steps {
-                sh 'npm run report'
+                bat 'npm run report'
             }
         }
 
