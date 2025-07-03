@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        git 'DefaultGit'   // Match the name set in Global Tool Config
+        git 'Git Default'   // Match the name set in Global Tool Config
     }
 
     stages {
