@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/jeevanreddymaru123/Insights-App-Playwright-Cucumber-POM.git'
-            }
-        }
 
         stage('Install Dependencies') {
             steps {
