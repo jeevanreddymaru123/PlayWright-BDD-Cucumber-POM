@@ -2,27 +2,19 @@ pipeline {
     agent any
 
     tools {
-        git 'Git Default'   // Match the name set in Global Tool Config
+        git 'GitInstalled'   // Match the name set in Global Tool Config
     }
 
     stages {
-        stage('Install Dependencies') {
+        stage('Install & Test){
             steps {
                 bat 'npm ci'
-            }
-        }
-
-        stage('Run Playwright Tests') {
-            steps {
                 bat 'npx playwright install'
                 bat 'npm run test'
-            }
-        }
-
-        stage('Generate Report') {
-            steps {
                 bat 'npm run report'
             }
+        }
+    
         }
 
         stage('Publish Report') {
