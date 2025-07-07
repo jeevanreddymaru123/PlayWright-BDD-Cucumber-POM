@@ -38,5 +38,5 @@ export const BASE_URL = {
   stgEnv: "https://v2.fitnessbi.com",
   prodEnv: "https://app.fitnessbi.com",
   local: "https://localhost:5001",
-}[process.env.ENV || "stgEnv"];
+}[process.env.ENV || "testEnv"];
 
