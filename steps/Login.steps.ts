@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { CustomWorld } from '../support/world';
-import { USER_CREDENTIALS, MAILBOX, SET_NEWPASSWORD, GMAILUSER_CREDENTIALS, LOGIN_CREDENTIALS } from "../testData/UserData";
+import { USER_CREDENTIALS, LOGIN_CREDENTIALS } from "../testData/UserData";
 
 // Background Steps
 Given('I navigate to the login page', async function(this: CustomWorld) {

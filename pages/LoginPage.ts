@@ -3,7 +3,6 @@ import { BasePage } from "./BasePage";
 import {
   BASE_URL,
   SET_NEWPASSWORD,
-  USER_CREDENTIALS,
   GMAILUSER_CREDENTIALS,
   MAILBOX,
 } from "../testData/UserData";
