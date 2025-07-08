@@ -1,0 +1,17 @@
+stages:
+  - test
+tests:  
+  stage: test  
+  image: mcr.microsoft.com/playwright:v1.27.1-focal
+  script:
+          # Install NPM packages
+          - npm ci
+           # Install Playwright browsers and dependencies
+          - npx playwright install --with-deps
+          # run playwright tests          
+          - npx cucumber-js
+          #Upload Cucumber HTML report
+          - name: cucumber-report
+          - path: reports/cucumber-report.html
+
+ 
