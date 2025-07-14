@@ -1,0 +1,1526 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "admin-panel-functionality;create-admin-and-delete-the-admin-successfully",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Create admin and delete the admin successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2124385200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5996495100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "steps\\Login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220713100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I navigate to \"Admin Panel\"",
+            "match": {
+              "location": "steps\\AdminPanel.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2587831200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I move to \"User Panel\" tab",
+            "match": {
+              "location": "steps\\User.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10582876299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I create a test admin",
+            "match": {
+              "location": "steps\\AdminPanel.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1314943999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the notification that \"User successfully created.\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 878722600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I search for the test admin",
+            "match": {
+              "location": "steps\\AdminPanel.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57959100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click the action button for the test admin",
+            "match": {
+              "location": "steps\\AdminPanel.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182545799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I select the delete option for the test admin",
+            "match": {
+              "location": "steps\\AdminPanel.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380024600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I confirm to delete the user",
+            "match": {
+              "location": "steps\\User.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155314200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I should see the notification that \"User deleted successfully!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12135099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 43664300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "admin-panel-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Admin panel functionality",
+    "tags": [],
+    "uri": "features\\AdminPanel.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "favourite-page-functionality;add,-verify,-and-remove-favorites-for-reports,-dashboards,-adhoc-reports,-and-quick-facts",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Add, verify, and remove favorites for Reports, Dashboards, Adhoc Reports, and Quick Facts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 324282200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3707928599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "steps\\Login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215221000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I search and select \"Forma Gym\" workspace",
+            "match": {
+              "location": "steps\\User.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4798480200
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "entityType",
+                      "entityName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Reports",
+                      "All Members"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Dashboards",
+                      "Attrition Analysis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Ad Hoc Reports",
+                      "SAMPLEGYM"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I add the following entities to favorites:",
+            "match": {
+              "location": "steps\\FavouritePage.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4489188500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see the notification that \"Favorite successfully added!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9082699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I navigate to the \"Favorites\" page",
+            "match": {
+              "location": "steps\\AnalyzeAdmin.steps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157787700
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "entityType",
+                      "entityName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Reports",
+                      "All Members"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Dashboards",
+                      "Attrition Analysis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Adhoc Reports",
+                      "SAMPLEGYM"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see the following favorites:",
+            "match": {
+              "location": "steps\\FavouritePage.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1297331899
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "entityType",
+                      "entityName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Reports",
+                      "All Members"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Dashboards",
+                      "Attrition Analysis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Adhoc Reports",
+                      "SAMPLEGYM"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I remove the following entities from favorites:",
+            "match": {
+              "location": "steps\\FavouritePage.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1835194500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I should see the notification that \"Favorite successfully removed!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12096100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36797800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "favourite-page-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Favourite page functionality",
+    "tags": [],
+    "uri": "features\\FavouritePage.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;successful-login-as-global-admin",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successful login as Global Admin",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1329228100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3651933299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I login as \"Global Admin\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198947399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the home page",
+            "match": {
+              "location": "steps\\Login.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 874567900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the profile action button",
+            "match": {
+              "location": "steps\\Login.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1160383900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I select the profile option from the menu",
+            "match": {
+              "location": "steps\\Login.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314258200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The profile email should match the \"Global Admin\" login email",
+            "match": {
+              "location": "steps\\Login.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 830236900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33864999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-failed",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login failed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 236889899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3641599099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I login with invalid credentials",
+            "match": {
+              "location": "steps\\Login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 268460500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the notification that \"Wrong e-mail or password!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 841654699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36180599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;forgot-password-and-reset",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Forgot password and reset",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 241469100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3739417300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 313986300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I click the \"Forgot password\" link",
+            "match": {
+              "location": "steps\\Login.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 470686999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see the notification that \"Please provide the email!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11650000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I enter the email address for password reset",
+            "match": {
+              "location": "steps\\Login.steps.ts:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25980800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I click the \"Forgot password\" link",
+            "match": {
+              "location": "steps\\Login.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107897499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see the notification that \"Please check your e-mail to continue.\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 845165499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I login to outlook to check the reset email",
+            "match": {
+              "location": "steps\\Login.steps.ts:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16873579799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I follow the password reset link in the email",
+            "match": {
+              "location": "steps\\Login.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17882255399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I set a new password",
+            "match": {
+              "location": "steps\\Login.steps.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 303466500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should be able to login with the new password",
+            "match": {
+              "location": "steps\\Login.steps.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2079373399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49206000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "tags": [],
+    "uri": "features\\Login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "recent-page-functionality;verify-entities-appear-in-recent-after-being-accessed",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify entities appear in Recent after being accessed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 225704699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7013098700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "steps\\Login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 379769000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "entityType",
+                      "entityName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Reports",
+                      "All Members"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Dashboards",
+                      "Attrition Analysis"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I access the following entities from their respective tabs:",
+            "match": {
+              "location": "steps\\RecentPage.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5797217300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I navigate to the \"Recent\" page",
+            "match": {
+              "location": "steps\\AnalyzeAdmin.steps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151939400
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "entityType",
+                      "entityName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Report",
+                      "All Members"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Dashboard",
+                      "Attrition Analysis"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the following entities in recent:",
+            "match": {
+              "location": "steps\\RecentPage.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 920047800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39022700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "recent-page-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Recent page functionality",
+    "tags": [],
+    "uri": "features\\RecentPage.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-create,-edit,-delete-functionality;create-user,-edit-the-existing-user-and-delete-user-succesfully",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Create user, edit the existing user and delete user succesfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 267284900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3728317399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "steps\\Login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227065000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I search and select \"Forma Gym\" workspace",
+            "match": {
+              "location": "steps\\User.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4973786699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I move to \"Users\" tab",
+            "match": {
+              "location": "steps\\User.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1036011700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I create a test user",
+            "match": {
+              "location": "steps\\User.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5710717199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the notification that \"User created successfully!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 847355199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I select the Edit action for the test user",
+            "match": {
+              "location": "steps\\User.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1506387900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Edit a random field and save",
+            "match": {
+              "location": "steps\\User.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 397362300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see the notification that \"User updated successfully!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 852019399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select the Delete action for the test user",
+            "match": {
+              "location": "steps\\User.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 708540099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I confirm to delete the user",
+            "match": {
+              "location": "steps\\User.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151760000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see the notification that \"User deleted successfully!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11517099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38933099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-create,-edit,-delete-functionality;create-user-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Create user with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 271930699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3918346399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "steps\\Login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201603300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I search and select \"Forma Gym\" workspace",
+            "match": {
+              "location": "steps\\User.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4863561599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I move to \"Users\" tab",
+            "match": {
+              "location": "steps\\User.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1125520300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I create a user with invalid credentials",
+            "match": {
+              "location": "steps\\User.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5533566200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I should see the notification that \"Failed to create user!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 402871899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39780100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-create,-edit,-delete-functionality;delete-user-in-the-edit-user-window",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Delete user in the edit user window",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 266339500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3940640800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "steps\\Login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225679600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I search and select \"Forma Gym\" workspace",
+            "match": {
+              "location": "steps\\User.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4789414199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I move to \"Users\" tab",
+            "match": {
+              "location": "steps\\User.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1018712700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I create a test user",
+            "match": {
+              "location": "steps\\User.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5031098399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I select the Edit action for the test user",
+            "match": {
+              "location": "steps\\User.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2499135899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I select Delete User from the edit user window",
+            "match": {
+              "location": "steps\\User.steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358220399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I confirm to delete the user",
+            "match": {
+              "location": "steps\\User.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181603900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I should see the notification that \"User deleted successfully!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10726599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40364099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-create,-edit,-delete-functionality;bulk-user-creation-via-csv-upload",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Bulk user creation via CSV upload",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 268796299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "steps\\Login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4026428000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "steps\\Login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205710900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I search and select \"Forma Gym\" workspace",
+            "match": {
+              "location": "steps\\User.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4946450400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I move to \"Users\" tab",
+            "match": {
+              "location": "steps\\User.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 984858199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I start the bulk user creation process",
+            "match": {
+              "location": "steps\\User.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3562117100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I upload the bulk user CSV file",
+            "match": {
+              "location": "steps\\User.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23397800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I save the bulk user creation",
+            "match": {
+              "location": "steps\\User.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 367261400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "I should see the notification that \"Bulk Users Created Successfully!\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1868228899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I send emails for bulk users",
+            "match": {
+              "location": "steps\\User.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 480444400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "I should see the notification that \"Emails Triggered to Pending Users successfully !\"",
+            "match": {
+              "location": "steps\\Login.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 851519100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40981900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-create,-edit,-delete-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User create, edit, delete functionality",
+    "tags": [],
+    "uri": "features\\User.feature"
+  }
+]

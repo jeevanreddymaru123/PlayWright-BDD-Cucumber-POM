@@ -1,0 +1,26 @@
+{
+  "name": "playwright-cucumber-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js && ts-node reportGenerator/report-generator.ts",
+    "report": "ts-node reportGenerator/report-generator.ts"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@faker-js/faker": "^9.8.0",
+    "@playwright/test": "^1.40.0",
+    "@types/cucumber": "^6.0.1",
+    "cucumber-html-reporter": "^7.2.0",
+    "fs-extra": "^11.3.0",
+    "open": "^10.1.2",
+    "path": "^0.12.7",
+    "playwright": "^1.53.1",
+    "playwright-slack-report": "^1.1.93",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "date-and-time": "^3.6.0",
+    "multiple-cucumber-html-reporter": "^3.9.3"
+  }
+}
